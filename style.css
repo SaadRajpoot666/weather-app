@@ -1,0 +1,220 @@
+@media screen and (min-width:1200px){
+    body {
+
+
+        background-image: linear-gradient(45deg, #73b6cb, rgb(33, 125, 161));
+        background-attachment: fixed;
+    
+     
+    }
+    
+    
+    
+    .container {
+        position: relative;
+        margin-top: 25%;
+        display: flex;
+    }
+    
+    .weatherCard {
+        background: transparent;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 10px white;
+        height: 85vh;
+        width: 85%;
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    
+    }
+    
+    h1 {
+        color: #ffff00;
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 0px 0px 10px white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    img {
+        display: block;
+        height: 30vh;
+        margin-left: 5%;
+    
+    }
+    
+    input::placeholder {
+        color: #888;
+        text-transform: uppercase;
+        text-align: center;
+    
+    }
+    
+    input {
+        text-transform: lowercase;
+        margin-top: 3%;
+        margin-left: 2%;
+        height: 5vh;
+        width: 30%;
+        border: 2px dotted wheat;
+        border-radius: 5px;
+    }
+    
+    .city{
+
+        position: absolute;
+        left: 70%;
+        margin-top: 2%;
+        font-size: 2rem;
+        color: white;
+        text-transform: uppercase;
+        text-align: right;
+    }
+    
+    .temperature {
+        /* text-align: center; */
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        font-size: 4rem;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 2%;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+    
+    .lon {
+        display: block;
+        margin-top:2%;
+        font-size: 1.5rem;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+        margin-bottom: 2%;
+    }
+    
+    .lat {
+        display: inline;
+        float: right;
+        margin-left: 15%;
+        font-size: 1.5rem;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+    
+    }
+    
+    .humidity {
+        margin-top: 2%;
+        display: inline;
+        /* float: right; */
+        /* margin-right: 15%; */
+        font-size: 1.5rem;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+    }
+    
+    .pressure {
+        margin-left: 60%;
+        display: inline;
+        /* float: right; */
+        font-size: 1.5rem;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+    }
+    
+    .Wind{
+    
+       margin-top: 2%;
+    }
+    .windspeed {
+        display: inline;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+    }
+    
+    .winddeg {
+       display: inline;
+        margin-left: 61%;
+        /* float: right; */
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: white;
+        /* text-shadow: 0px 0px 10px #bbf02e; */
+    }
+    
+    button {
+        position: relative;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        display: block;
+        margin: 10px;
+        margin-left: 10%;
+        color: black;
+        z-index: 1;
+    
+    }
+    
+    button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #ffff00;
+        transform: scaleX(0);
+        transform-origin: center;
+        color: white;
+        z-index: -1;
+    }
+    
+    button:hover::before,
+    button:active::before {
+        transform: scaleX(1);
+        transition: transform 500ms;
+    
+    }
+    
+    button:hover,
+    button:active {
+    
+        transition: 500ms;
+        scale: 1.1;
+        color: white;
+    }
+    
+    .min {
+    
+        position: relative;
+        /* top: 40%; */
+        left: 40%;
+        display: inline;
+        color: white;
+    }
+    
+    .max {
+        color: white;
+        position: relative;
+        /* top: 40%; */
+        left: 40%;
+        display: inline;
+    }
+    .main{
+       display:block;
+       position: relative;
+       left: 73%;
+       font-size: 1.5rem;
+       color: white;
+    }
+    .country{
+       position: relative;
+       left: 73%;
+       color: white;
+    }
+}
